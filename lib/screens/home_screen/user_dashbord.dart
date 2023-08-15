@@ -60,7 +60,7 @@ class _UserDashbordState extends State<UserDashbord> {
                   TextButton(onPressed: () {}, child: const Text('See all'))
                 ],
               ),
-              Container(
+              SizedBox(
                 height: MediaQuery.of(context).size.height,
                 child: IconListView(),
               )
@@ -90,6 +90,8 @@ class IconListView extends StatelessWidget {
     },
   ];
 
+  IconListView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -99,12 +101,12 @@ class IconListView extends StatelessWidget {
         itemCount: itemList.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start, // Align to the left
               children: [
                 Icon(itemList[index]['icon'], size: 55),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Text(itemList[index]['text']),
               ],
             ),
