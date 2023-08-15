@@ -1,0 +1,39 @@
+name: hiredo
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.2.19
+  cupertino_icons: ^1.0.2
+  get: ^4.6.5
+  flutter_otp_text_field: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+flutter_native_splash:
+  color: "#056B50"
+  image: assets/logo.png
+  android_12:
+    icon_background_color: "#056B50"
+    image: assets/logo.png
+    
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+    - assets/
+    - assets/twolady.png
+    - assets/wellcome.png
+    - assets/google.png
+    - assets/appicon.png
